@@ -16,7 +16,7 @@
                 <span class="inline-block">属人化脱却から</span><span class="inline-block">新市場開拓までの最短ルート</span>
             </h1>
             <div class="bg-slate-800 rounded-2xl aspect-video flex items-center justify-center relative border border-slate-700 shadow-2xl">
-                <span class="text-slate-500 font-bold">15分本編セミナー動画（Vimeo）</span>
+                <span class="text-slate-500 font-bold">15分本編セミナー動画</span>
             </div>
         </div>
     </section>
@@ -26,21 +26,21 @@
             <span class="inline-block">成功企業が実践する</span><span class="inline-block">「AI営業」3つの要諦</span>
         </h2>
         <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
-            <div class="bg-slate-50 p-8 rounded-xl border-t-4 border-blue-600 shadow-sm">
-                <p class="font-bold text-lg mb-4">1. ターゲットのAI特定</p>
-                <p class="text-sm text-slate-500 leading-relaxed">
+            <div class="bg-slate-50 p-8 rounded-xl border-t-4 border-blue-600 shadow-sm text-center">
+                <p class="font-bold text-lg mb-4 text-blue-800">1. ターゲットのAI特定</p>
+                <p class="text-sm text-slate-600 leading-relaxed">
                     <span class="inline-block">AIが膨大なリストから</span><span class="inline-block">「今、会うべき相手」を抽出。</span><span class="inline-block">人間は「付加価値の高い商談」だけに</span><span class="inline-block">集中できます。</span>
                 </p>
             </div>
-            <div class="bg-slate-50 p-8 rounded-xl border-t-4 border-blue-600 shadow-sm">
-                <p class="font-bold text-lg mb-4">2. 精度向上のサイクル</p>
-                <p class="text-sm text-slate-500 leading-relaxed">
+            <div class="bg-slate-50 p-8 rounded-xl border-t-4 border-blue-600 shadow-sm text-center">
+                <p class="font-bold text-lg mb-4 text-blue-800">2. 精度向上のサイクル</p>
+                <p class="text-sm text-slate-600 leading-relaxed">
                     <span class="inline-block">商談結果をAIに</span><span class="inline-block">フィードバックすることで、</span><span class="inline-block">リストとスクリプトが自動で</span><span class="inline-block">自社専用に洗練されていきます。</span>
                 </p>
             </div>
-            <div class="bg-slate-50 p-8 rounded-xl border-t-4 border-blue-600 shadow-sm">
-                <p class="font-bold text-lg mb-4">3. 圧倒的な実証データ</p>
-                <p class="text-sm text-slate-500 leading-relaxed">
+            <div class="bg-slate-50 p-8 rounded-xl border-t-4 border-blue-600 shadow-sm text-center">
+                <p class="font-bold text-lg mb-4 text-blue-800">3. 圧倒的な実証データ</p>
+                <p class="text-sm text-slate-600 leading-relaxed">
                     <span class="inline-block">アポ率2.95%達成、</span><span class="inline-block">月間80時間以上の工数削減など、</span><span class="inline-block">200社以上の実績に基づく</span><span class="inline-block">手法です。</span>
                 </p>
             </div>
@@ -54,7 +54,7 @@
         </div>
     </section>
 
-    <section class="bg-slate-100 py-24 px-6">
+    <section class="bg-slate-100 py-24 px-6" id="reservation">
         <div class="max-w-4xl mx-auto bg-white p-8 md:p-16 rounded-3xl shadow-2xl border border-slate-200">
             <div class="text-center mb-12">
                 <span class="inline-block px-4 py-1 bg-red-100 text-red-600 text-xs font-bold rounded-full mb-4">先着10社限定：GW明け優先予約枠</span>
@@ -65,7 +65,7 @@
                     <span class="inline-block">動画で解説した仕組みを、</span><span class="inline-block">御社の商材・ターゲットで</span><span class="inline-block">再現するとどうなるか？</span><br>
                     <span class="inline-block">AIを使って「何件のアポが取れるか」を</span><span class="inline-block">個別診断し、収益化シミュレーションをご提示します。</span>
                 </p>
-                <div class="bg-yellow-50 border border-yellow-200 p-6 rounded-xl text-left">
+                <div class="bg-yellow-50 border border-yellow-200 p-6 rounded-xl text-left mb-10">
                     <p class="font-bold text-yellow-800 mb-2">【本セミナー視聴者限定 特典】</p>
                     <ul class="text-sm text-yellow-900 space-y-2">
                         <li class="flex items-start">
@@ -80,10 +80,21 @@
                 </div>
             </div>
 
-            <div class="bg-slate-50 border-2 border-dashed border-slate-200 rounded-2xl min-h-[500px] flex items-center justify-center text-slate-400">
-                ここにTimeRexの埋め込みコードを配置
+            <div id="timerex_widget" class="w-full" style="min-height: 700px;"></div>
+            <script src="https://asset.timerex.net/js/widgets.js"></script>
+            <script>
+                (function() {
+                    window.onload = function() {
+                        if (typeof Timerex !== 'undefined') {
+                            Timerex.Widget.init({
+                                url: "https://timerex.net/s/wu/cb1883c7",
+                                el: "#timerex_widget"
+                            });
+                        }
+                    };
+                })();
+            </script>
             </div>
-        </div>
     </section>
 
     <footer class="py-12 text-center text-slate-400 text-xs border-t border-slate-100">
