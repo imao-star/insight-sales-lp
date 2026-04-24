@@ -66,34 +66,39 @@
                     <span class="inline-block">AIを使って「何件のアポが取れるか」を</span><span class="inline-block">個別診断し、収益化シミュレーションをご提示します。</span>
                 </p>
                 <div class="bg-yellow-50 border border-yellow-200 p-6 rounded-xl text-left mb-10">
-                    <p class="font-bold text-yellow-800 mb-2">【本セミナー視聴者限定 特典】</p>
+                    <p class="font-bold text-yellow-800 mb-2 text-center">【本セミナー視聴者限定 特典】</p>
                     <ul class="text-sm text-yellow-900 space-y-2">
                         <li class="flex items-start">
-                            <span class="mr-2">●</span>
+                            <span class="mr-2 text-yellow-600 font-bold">●</span>
                             <b>初月1,000社 営業代行無料キャンペーン</b>
                         </li>
                         <li class="flex items-start">
-                            <span class="mr-2">●</span>
+                            <span class="mr-2 text-yellow-600 font-bold">●</span>
                             <b>初期費用50万円お値引き（モデルパートナー枠）</b>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div id="timerex_widget" style="width: 100%; min-height: 700px; background-color: #f9fafb; border-radius: 8px;"></div>
-            
+            <div id="timerex_widget" style="width: 100%; min-height: 850px; background-color: #f9fafb; border: 1px solid #eee; border-radius: 8px; overflow: hidden;">
+                <div style="text-align: center; padding-top: 100px; color: #666;">
+                    <p>カレンダーを読み込んでいます...</p>
+                    <p style="margin-top: 20px; font-size: 0.8rem;">
+                        表示されない場合は
+                        <a href="https://timerex.net/s/wu/cb1883c7" target="_blank" style="color: #2563eb; text-decoration: underline; font-weight: bold;">
+                            こちらを別画面で開いてください
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <script src="https://asset.timerex.net/js/widgets.js"></script>
             <script>
-                // TimeRexの初期化関数
-                function initTimerex() {
-                    if (window.Timerex && window.Timerex.Widget) {
-                        window.Timerex.Widget.init({
-                            url: "https://timerex.net/s/wu/cb1883c7",
-                            el: "#timerex_widget"
-                        });
-                    }
-                }
+                // 読み込み完了後、直接実行
+                Timerex.Widget.init({
+                    url: "https://timerex.net/s/wu/cb1883c7",
+                    el: "#timerex_widget"
+                });
             </script>
-            <script src="https://asset.timerex.net/js/widgets.js" async onload="initTimerex()"></script>
             </div>
     </section>
 
