@@ -83,14 +83,16 @@
                 </div>
             </div>
 
-            <div style="width: 100%; height: 800px; overflow: hidden; border-radius: 8px; border: 1px solid #eee; background-color: #f9fafb;">
-                <iframe src="https://timerex.net/s/wu/cb1883c7" 
-                        width="100%" 
-                        height="100%" 
-                        frameborder="0" 
-                        style="border: none;">
-                </iframe>
-            </div>
+            <div id="timerex_calendar" data-url="https://timerex.net/s/wu/cb1883c7"></div>
+            <script id="timerex_calendar_script" src="https://asset.timerex.net/js/calendar/widget.js"></script>
+            <script type="text/javascript">
+                // ページ読み込み完了後にカレンダーを呼び出す
+                window.addEventListener('DOMContentLoaded', function(){
+                    if(typeof TimerexCalendar === 'function') {
+                        TimerexCalendar();
+                    }
+                });
+            </script>
             <p class="text-center text-slate-400 text-xs mt-6">
                 ※カレンダーが表示されない場合は
                 <a href="https://timerex.net/s/wu/cb1883c7" target="_blank" class="text-blue-600 underline">こちら</a>
