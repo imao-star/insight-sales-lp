@@ -83,20 +83,17 @@
                 </div>
             </div>
 
-            <div id="timerex_calendar" data-url="https://timerex.net/s/wu/cb1883c7"></div>
-            <script id="timerex_calendar_script" src="https://asset.timerex.net/js/calendar/widget.js"></script>
-            <script type="text/javascript">
-                // ページ読み込み完了後にカレンダーを呼び出す
-                window.addEventListener('DOMContentLoaded', function(){
-                    if(typeof TimerexCalendar === 'function') {
-                        TimerexCalendar();
-                    }
-                });
-            </script>
-            <p class="text-center text-slate-400 text-xs mt-6">
+            <div class="min-h-[800px] bg-slate-50 rounded-xl overflow-hidden border border-slate-100 shadow-inner">
+                <div id="timerex_calendar" data-url="https://timerex.net/s/wu/cb1883c7"></div>
+                <script id="timerex_embed" src="https://asset.timerex.net/js/embed.js"></script>
+                <script type="text/javascript">
+                  TimerexCalendar();
+                </script>
+                </div>
+            <p class="text-center text-slate-400 text-xs mt-8">
                 ※カレンダーが表示されない場合は
-                <a href="https://timerex.net/s/wu/cb1883c7" target="_blank" class="text-blue-600 underline">こちら</a>
-                より予約してください。
+                <a href="https://timerex.net/s/wu/cb1883c7" target="_blank" class="text-blue-600 underline font-bold">こちら（公式予約ページ）</a>
+                より直接予約してください。
             </p>
         </div>
     </section>
